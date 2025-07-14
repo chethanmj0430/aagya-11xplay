@@ -1,0 +1,164 @@
+.account-statement-container {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: white;
+    width: 84%;
+    margin-top: 60px;
+    margin-left: 250px;
+}
+
+.header {
+  background-color: #1d75bd;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.filter-bar {
+  background-color: #e4e4e4;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dropdown, .date-picker {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: white;
+}
+
+.get-button {
+  padding: 8px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.statement-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+}
+
+.statement-table th {
+  background-color: #d6d6d6;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.statement-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.no-data {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  background-color: #fff;
+}
+
+.pagination {
+  padding: 10px 20px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+  color: #999;
+}
+
+
+@media (max-width: 767px) {
+  .account-statement-container {
+    width: 100%;
+    margin: 60px 0 0 0;
+    padding: 10px;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .dropdown, .date-picker, .get-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .statement-table th,
+  .statement-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .pagination {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .pagination button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .account-statement-container {
+    width: 95%;
+    margin-left: 0;
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+
+  .filter-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .dropdown, .date-picker {
+    flex: 1 1 45%;
+  }
+
+  .get-button {
+    flex: 1 1 100%;
+    max-width: 200px;
+  }
+
+  .statement-table th,
+  .statement-table td {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .account-statement-container {
+    width: 84%;
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 0;
+  }
+
+  .filter-bar {
+    flex-direction: row;
+  }
+
+  .dropdown, .date-picker {
+    width: auto;
+  }
+}

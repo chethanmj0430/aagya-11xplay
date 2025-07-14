@@ -1,0 +1,45 @@
+<div class="dashboard-wrapper">
+    <app-sidebar></app-sidebar>
+
+
+<div class="account-statement-container">
+  <div class="header">ACCOUNT STATEMENT</div>
+
+  <div class="filter-bar">
+    <select class="dropdown">
+      <option>All Sports</option>
+    </select>
+
+    <input type="date" class="date-picker">
+    <input type="date" class="date-picker">
+
+    <button class="get-button">GET STATEMENT</button>
+  </div>
+
+  <table class="statement-table">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Date</th>
+        <th>Total</th>
+        <th>Balance</th>
+        <th>D/C</th>
+        <th>Description</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="7" class="no-data">No Data Found</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <button disabled>Previous Page</button>
+    <button disabled>Next Page</button>
+  </div>
+</div>
+
+
+</div>

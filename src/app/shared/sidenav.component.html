@@ -1,0 +1,72 @@
+<button class="mobile-menu-toggle" (click)="toggleSidebar()">
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+<aside id="sidebar" class="sidebar" [class.open]="sidebarOpen">
+  <ul id="sidebar-nav" class="sidebar-nav">
+    <li class="nav-item mobile-logo-item">
+      <img class="mobile-logo" src="assets/images/logo.png" alt="11xplay Logo" />
+    </li>
+
+    <li class="nav-item d-none d-sm-block">
+      <a class="nav-link final-link" routerLink="/game-detail/28127348" routerLinkActive="nmm-active">
+        <img src="https://speedcdn.io/assets/score_card/ipl-icon.png" alt="IPL Icon"/><span class="blinker">IPL 2025</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/dashbaords" routerLinkActive="nmm-active" class="nav-link final-link">
+        <img src="assets/images/menu-home.png" alt="Home Icon"/><span>home</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/multi-market" routerLinkActive="nmm-active" class="nav-link multi-market final-link">
+        <img src="assets/images/menu-market.png" alt="Multi Market Icon"/><span>Multi Market</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/reports/profit-loss" routerLinkActive="nmm-active" class="nav-link final-link">
+        <img src="assets/images/profitloss.svg" class="img-fluid" alt="Profit & Loss Icon"/><span>profit &amp; loss</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/account-statement" routerLinkActive="nmm-active" class="nav-link final-link">
+        <img src="assets/images/statement.svg" class="img-fluid" alt="Account Statement Icon"/><span>Account statement</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/reports/unsettled-bets" routerLinkActive="nmm-active" class="nav-link final-link">
+        <img src="assets/images/bets.svg" class="img-fluid" alt="Unsettled Bets Icon"/><span>unsettled bets</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rulesModal" class="nav-link final-link">
+        <img src="assets/images/terms.svg" class="img-fluid" alt="Rules Icon"/><span>rules</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/stake-settings" routerLinkActive="nmm-active" class="nav-link final-link">
+        <img src="assets/images/edit.svg" class="img-fluid" alt="Edit Stake Icon"/><span>edit stake</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/profile" routerLinkActive="nmm-active" class="nav-link final-link">
+        <img src="assets/images/profile_image.png" class="img-fluid" alt="Profile Icon"/><span>Profile (demo123)</span>
+      </a>
+    </li>
+
+    <li class="nav-item nav-highlight">
+      <a href="javascript:void(0);" class="nav-link final-link" (click)="onLogout()">
+        <img src="assets/images/logout.svg" class="img-fluid" alt="Logout Icon"/><span>Logout</span>
+      </a>
+    </li>
+  </ul>
+</aside>

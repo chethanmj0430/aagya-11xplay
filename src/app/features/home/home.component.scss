@@ -1,0 +1,202 @@
+.home-page {
+      width: 88%;
+    margin-left: 250px;
+}
+
+.casino-tabs {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+.casino-btn {
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.red { background-color: #d73925; }
+.orange { background-color: #f27c00; }
+.yellow { background-color: #f2b705; }
+
+
+.race-section {
+  padding: 10px 20px;
+  background-color: #e8f1f9;
+}
+.race-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.race-timers {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+      width: 1262px;
+    overflow-x: auto;
+}
+.race-flag {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #ccc;
+  
+}
+.race-flag img {
+  height: 20px;
+}
+.sports-section {
+  background: #ffffff;
+}
+.sports-header {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+.match-card {
+  margin-bottom: 10px;
+}
+.match-info {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.match-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.match-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.live-badge {
+  background: green;
+  color: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.odds-grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.odds {
+  padding: 6px 12px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+.odds.blue {
+  background-color: #d1ecf1;
+}
+.odds.pink {
+  background-color: #f8d7da;
+}
+
+@media (max-width: 767px) {
+  .home-page {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .casino-tabs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .casino-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .race-timers {
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .race-flag {
+    flex: 0 0 auto;
+    font-size: 12px;
+  }
+
+  .sports-header {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .match-info {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .odds-grid {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .odds {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-page {
+    width: 95%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .casino-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .race-timers {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .odds-grid {
+    flex-wrap: wrap;
+  }
+
+  .odds {
+    flex: 1 1 30%;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .home-page {
+    width: 88%;
+    margin-left: 250px;
+  }
+
+  .casino-tabs {
+    flex-direction: row;
+  }
+
+  .race-timers {
+    width: 1262px;
+  }
+
+  .odds-grid {
+    flex-direction: row;
+  }
+
+  .odds {
+    width: auto;
+  }
+}

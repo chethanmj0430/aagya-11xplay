@@ -1,0 +1,39 @@
+<div class="login-page-container">
+  <div class="login-modal-overlay"></div>
+  <div class="login-form-container">
+    <button class="close-button" (click)="closeLogin()">×</button>
+    <div class="login-header">
+      <h3 class="login-title">LOGIN</h3>
+    </div>
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <div class="form-group">
+        <label for="username">USERNAME</label>
+        <input type="text" id="username" formControlName="username" placeholder="Username" required>
+        <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched" class="error-message">
+          Username is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" formControlName="password" placeholder="Password" required>
+        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error-message">
+          Password is required.
+        </div>
+      </div>
+      <div class="form-group remember-me">
+        <input type="checkbox" id="rememberMe" name="rememberMe">
+        <label for="rememberMe">Remember Me?</label>
+      </div>
+
+      <div *ngIf="loginError" class="auth-error-message">
+        Invalid username or password.
+      </div>
+
+      <button type="submit" class="login-button" [disabled]="loginForm.invalid">LOG IN</button>
+    </form>
+    <div class="login-footer">
+      <p>Powered by 11xplay</p>
+      <p>11xplayofficial&#x40;gmail.com</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,139 @@
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+      width: 87%;
+    margin-left: 229px;
+    margin-top: 39px;
+}
+
+.profile-box, .password-box {
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0;
+  background-color: white;
+}
+
+.box-header {
+  background-color: #0070c0;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.info-item {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #00b21d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #00991a;
+}
+
+small {
+  font-size: 12px;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  .profile-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .profile-box, .password-box {
+    min-width: 100%;
+  }
+
+  .box-header {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .info-item {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  input[type="password"] {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .profile-container {
+    width: 95%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .profile-box, .password-box {
+    min-width: 45%;
+  }
+
+  .info-item {
+    font-size: 14px;
+  }
+
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-container {
+    width: 87%;
+    margin-left: 229px;
+    margin-top: 39px;
+  }
+
+  .profile-box, .password-box {
+    min-width: 300px;
+  }
+}
