@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const appRoutes: Routes = [
   {
-    path: 'home',
+    path: '',
     loadChildren: () => import('./app.routes').then(m => m.appRoutes),
   },
   {
