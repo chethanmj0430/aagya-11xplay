@@ -1,9 +1,10 @@
 import { Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 
 export const appRoutes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./features/home/home.routes').then(m => m.HOME_ROUTES),
+    component: AppComponent,
   },
   {
     path: 'dashbaords',
