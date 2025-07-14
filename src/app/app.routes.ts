@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const appRoutes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./app.routes').then(m => m.appRoutes),
+    loadChildren: () =>import('./features/auth/auth.routes').then(m => m.AUTH_ROUTES),
   },
   {
     path: 'dashbaords',
